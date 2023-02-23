@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+:root {
+    --primary-color: rgb(50, 96, 156);
+    --secundary-color: rgb(255, 255, 255);
+    --secundary-color-darker: rgb(187, 187, 187);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+}
+
+.container {
+    background: var(--secundary-color);
+    max-width: 640px;
+    max-height: 250px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    border-radius: 18px;
+}
+
+.container button {
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    box-shadow: 5px 5px 10px black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: .5rem 1rem;
+    display: inline-block;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+.container button:hover {
+    background-color: var(--secundary-color);
+    color: black;
+    border: 2px solid var(--primary-color);
+}
+
+.container button:active {
+    background-color: var(--secundary-color-darker);
+    box-shadow: 3px 3px 10px black;
+    transform: translateY(4px);
+}
+
+.relogio {
+    font-size: 3rem;
+}
+
+.pausado {
+    color: red;
+}
